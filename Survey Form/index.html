@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="survey-form" method="post">
+
+        <div class="title">
+            <h2><u>Application for a Job at Ventpar</u></h2>
+        </div>
+
+        <!-- Personal Details -->
+        <div class="fieldset1">
+            <fieldset>
+
+                <legend><b>Personal Details</b></legend>
+
+                <br>
+
+                <label for="name">Name:</label> &nbsp;
+                <input type="text" id="name" placeholder="Enter Name" required>
+
+                <br><br>
+
+                <label for="address">Address:</label> &nbsp;
+                <input type="text" id="address" placeholder="Enter Address" required>
+
+                <br><br>
+
+                <label for="email">Email:</label> &nbsp;
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+
+                <br><br>
+
+                <label for="number">Phone Number:</label> &nbsp;
+                <input type="tel" id="number" placeholder="Enter Number" required>
+
+                <br><br>
+
+                <label for="birthday">Birthday:</label> &nbsp;
+                <input type="date" id="birthday" required>
+
+                <br><br>
+
+                <label for="gender">Gender:</label>
+
+                <br><br>
+
+                <input type="radio" id="male" name="gender" required>
+                <label for="male">Male</label>
+
+                <br>
+
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">Female</label>
+
+                <br>
+
+                <input type="radio" id="other" name="gender" required>
+                <label for="other">Other</label>
+
+            </fieldset>
+        </div>
+
+        <br>
+
+        <!-- Education and Politics -->
+
+        <div class="fieldset2">
+            <fieldset>
+
+                <legend><b>Education & Politics</b></legend>
+
+                <label for="education">Education Level Completed:</label> &nbsp;
+                <select>
+                    <option value="college">College</option>
+                    <option value="university">University</option>
+                    <option value="high-School">High-School</option>
+                    <option value="none">None</option>
+                </select> &nbsp;
+
+                <label for="politics">Political Persuasion:</label> &nbsp;
+                <select>
+                    <option value="left">Left Wing</option>
+                    <option value="right">Right Wing</option>
+                    <option value="conservative">Conservative</option>
+                    <option value="nazi">Nazi</option>
+                </select>
+
+            </fieldset>
+        </div>
+
+        <br>
+
+        <!-- Essay Section -->
+
+        <div class="fieldset3">
+            <fieldset>
+
+                <legend><b>Essay Section</b></legend>
+
+                <label for="msg"></label>
+                <p>How did you find out about us?</p>
+                <textarea name="user_message" id="msg" cols="50" rows="5" placeholder="Enter your Text here"></textarea>
+
+                <br>
+
+                <label for="msg"></label>
+                <p>Why are you so eager to work at Ventpar?</p>
+                <textarea name="user_massage" id="msg" cols="50" rows="5" placeholder="Enter your Text here"></textarea>
+
+                <br><br>
+
+                <label for="myfile">Please upload your Application, Resume and Certificates here:</label>
+                <input type="file" id="myfile" name="myfile" accept=".pdf">
+
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div class="submit">
+            <button type="submit" id="submit">Send Your Application</button>
+        </div>
+
+    </form>
+</body>
+</html>
